@@ -175,7 +175,7 @@
     - 악의적인 목적의 사용을 금합니다.<br><br>
     ❤️<br>
     - 웹사이트는 모바일 데이터 환경에 최적화되어있습니다.<br>
-    - 닉네임 설정이 가능합니다.<br>
+    - 애칭 설정이 가능합니다.<br>
     (설정하지 않을 시 <strong>러비티</strong>로 자동 적용)
   </div>
 
@@ -185,13 +185,13 @@
         <button onclick="goWithNickname()">GO</button>
         <button onclick="skipNickname()">SKIP</button>
     </div>
-    <div class="tip">닉네임은 저장되지 않으며, 페이지를 닫기 전까지 유지됩니다.</div>
+    <div class="tip">설정한 애칭은 저장되지 않으며, 페이지를 닫기 전까지 유지됩니다.</div>
   </div>
 
   <script>
     function goWithNickname() {
       const nick = document.getElementById('nicknameInput').value.trim();
-      if (nick === '') return alert("닉네임을 입력하세요!");
+      if (nick === '') return alert("애칭을 입력하세요!");
       sessionStorage.setItem('nickname', nick);
       window.location.href = "main.html";  // 메인 페이지로 이동
     }
